@@ -20,7 +20,7 @@ public class CellCountInputField : MonoBehaviour
 			else if (value < 2)
 				cellCount = 2;
 			else
-				cellCount = 30;
+				cellCount = 22;
 		}
 	}
 	private string typedText;
