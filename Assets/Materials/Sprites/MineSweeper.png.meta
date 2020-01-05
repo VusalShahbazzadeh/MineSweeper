@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: 3295443532877483647
     second: MineSweeper_9
+  - first:
+      213: 7348553779261795641
+    second: MineSweeper_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -150,7 +153,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 703f5533f28838c4983b10177fabb6d0
+      spriteID: 029771454dbc59d44a6e2982e1b176e9
       internalID: 1687837447959797356
       vertices: []
       indices: 
@@ -171,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea6bdb195c2261a448e2644e1be50859
+      spriteID: 7f1a2cd71d81a4e4682170f1f9568440
       internalID: -2151540066681926165
       vertices: []
       indices: 
@@ -192,7 +195,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9fa2737575f52644af64dcc7678918f
+      spriteID: e8d10384b30923841a172548b544e635
       internalID: -4697156305250692029
       vertices: []
       indices: 
@@ -213,7 +216,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01c844aed42edb44f8fca90fe84405e2
+      spriteID: fb585ec45941a6a4784cdbc512427b1c
       internalID: 1950441311310697966
       vertices: []
       indices: 
@@ -234,7 +237,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1999b4e97d77b2147986b9d6a11e4ff8
+      spriteID: 8d79f43032191ed4fba4b5dc349f1391
       internalID: 4587962452765460760
       vertices: []
       indices: 
@@ -255,7 +258,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb78011591a363a49bb5f81c44adde68
+      spriteID: 78be02a00472e0449a77a256f40c68fa
       internalID: -5475000407523985211
       vertices: []
       indices: 
@@ -276,7 +279,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2af0831baf4722459ecdca6d1b8120f
+      spriteID: ac8809ed467a57b4ba72f3768ae11980
       internalID: 131981562225550659
       vertices: []
       indices: 
@@ -297,7 +300,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c78a12a2ffd3b4841be524c4d75bb535
+      spriteID: ba45aab22f1259249abc4b5bc0b89ee5
       internalID: -85384097624981815
       vertices: []
       indices: 
@@ -318,7 +321,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fe8f15a63afb0e498836c548c9e1895
+      spriteID: ef34710736545a54bb6fb9bb29032d26
       internalID: 7155766459235167670
       vertices: []
       indices: 
@@ -339,8 +342,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f71562d0f2beb84883405f8353d7ee4
+      spriteID: 72845cfe88e34cb42983805eb421fb2c
       internalID: 3295443532877483647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineSweeper_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7db7111b2cdba1409eff90aa41d28c3
+      internalID: 7348553779261795641
       vertices: []
       indices: 
       edges: []
