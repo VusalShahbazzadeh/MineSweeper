@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class PlayWindow : MonoBehaviour
 {
 	public GameObject CellPrefab;
-	public static int Width = 10;
-	public static int Height = 10;
+	public static int Width;
+	public static int Height ;
 	public float Probability;
 
 
@@ -17,6 +17,8 @@ public class PlayWindow : MonoBehaviour
 
 	private void Awake()
 	{
+		Height = Width = PlayerPrefs.HasKey("CellCount")?PlayerPrefs.GetInt("CellCount"):10;
+		
 		//Instantiating Cells and mines
 		mineMap = new bool[Width,Height];
 		for (int i = 0; i < Height; i++)
