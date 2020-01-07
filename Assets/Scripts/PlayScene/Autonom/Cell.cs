@@ -30,7 +30,6 @@ public class Cell : MonoBehaviour
 
 	public void ModifyCell()
 	{
-		
 		if (CellIsOpen)
 		{
 			if (!modified)

@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\PlayScene\Autonom\Cell.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\ClickModeScript.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\MinesLeft.cs" />
+    <Compile Include="Assets\Scripts\PlayScene\Autonom\OpenRandomCellOnStart.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\PauseButton.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\PlayWindow.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\StopWatch.cs" />
