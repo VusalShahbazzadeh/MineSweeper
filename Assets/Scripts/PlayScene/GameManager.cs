@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 		{
 			if (Width * Height - markedCount == openCount)
 			{
-				if (!WinScenePanelReference.activeSelf)
+				if (!WinScenePanelReference.activeSelf && !DeadScenePanelReference.activeSelf)
 				{
 					WinScenePanelReference.SetActive(true);
 					WinScenePanelReference.GetComponent<WinScene>().WinCalculations();
