@@ -1,17 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class OpenRandomCellOnStart : MonoBehaviour
 {
 
 	private void ModifyRandomCell()
 	{
-		Cell temp;
-		temp = transform.GetChild(Random.Range(0, PlayWindow.Width * PlayWindow.Height)).GetComponent<Cell>();
-		alreadyCalledModifyRandomCell = !temp.mine;
-		if (!temp.mine)
-			temp.ModifyCell();
+		Transform temp;
+		temp = transform.GetChild(Random.Range(0, PlayWindow.Width * PlayWindow.Height));
+		Cell tempCell = temp.GetComponent<Cell>();
+		alreadyCalledModifyRandomCell = !tempCell.mine;
+		if (temp.GetChild(0).GetComponent<Text>().text == "" && !tempCell.mine)
+			tempCell.ModifyCell();
 		else
 			ModifyRandomCell();
 	}

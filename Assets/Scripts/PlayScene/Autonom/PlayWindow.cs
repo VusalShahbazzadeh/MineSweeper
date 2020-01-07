@@ -6,7 +6,7 @@ public class PlayWindow : MonoBehaviour
 	public GameObject CellPrefab;
 	public static int Width;
 	public static int Height ;
-	public float Probability;
+	public static float Probability=0.15f;
 
 
 	private  GridLayoutGroup GLG;
@@ -21,15 +21,26 @@ public class PlayWindow : MonoBehaviour
 		
 		//Instantiating Cells and mines
 		mineMap = new bool[Width,Height];
+
 		for (int i = 0; i < Height; i++)
 		{
 			for (int j = 0; j < Width; j++)
 			{
 				Cell temp = Instantiate(CellPrefab, transform).GetComponent<Cell>();
-				mineMap[j, i] = temp.mine = (Random.Range(0, (int)(1/Probability)) == 0);
 				temp._j = j;
 				temp._i = i;
 			}
+		}
+
+		for (int i = 0; i < (int)(Width*Height*Probability); i++)
+		{
+			int rand = Random.Range(0,Width*Height);
+			Cell temp = transform.GetChild(rand).GetComponent<Cell>();
+			if (temp.mine)
+				i--;
+			else
+				temp.mine = true;
+			mineMap[rand % Width, (int)(rand / Width)] = true;
 		}
 
 		//Initating numbers

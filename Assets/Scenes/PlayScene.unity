@@ -2713,7 +2713,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CellPrefab: {fileID: 4187719044286126206, guid: 205add4dd57016948bde2d11dc48e4a9,
     type: 3}
-  Probability: 0.1
 --- !u!114 &1760970577
 MonoBehaviour:
   m_ObjectHideFlags: 0
