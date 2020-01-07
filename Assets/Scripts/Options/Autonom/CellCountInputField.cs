@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class CellCountInputField : MonoBehaviour
@@ -15,7 +13,7 @@ public class CellCountInputField : MonoBehaviour
 		}
 		set
 		{
-			if (value >= 2 && value <= 30)
+			if (value >= 2 && value <= 22)
 				cellCount = value;
 			else if (value < 2)
 				cellCount = 2;

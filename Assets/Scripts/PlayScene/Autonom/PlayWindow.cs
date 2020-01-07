@@ -17,7 +17,9 @@ public class PlayWindow : MonoBehaviour
 
 	private void Awake()
 	{
+		//Initiating Player Prefs
 		Height = Width = PlayerPrefs.HasKey("CellCount")?PlayerPrefs.GetInt("CellCount"):10;
+		Probability = (PlayerPrefs.HasKey("PercentageOfMines") ? PlayerPrefs.GetInt("PercentageOfMines") : 15) / 100f;
 		
 		//Instantiating Cells and mines
 		mineMap = new bool[Width,Height];
@@ -32,7 +34,7 @@ public class PlayWindow : MonoBehaviour
 			}
 		}
 
-		for (int i = 0; i < (int)(Width*Height*Probability); i++)
+		for (int i = 0; i < Mathf.Round(Width * Height * Probability); i++)
 		{
 			int rand = Random.Range(0,Width*Height);
 			Cell temp = transform.GetChild(rand).GetComponent<Cell>();

@@ -62,13 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Instructions\MenuButton.cs" />
-    <Compile Include="Assets\Scripts\MenuScene\InstructionButton.cs" />
-    <Compile Include="Assets\Scripts\MenuScene\OptionsButton.cs" />
-    <Compile Include="Assets\Scripts\MenuScene\PlayButton.cs" />
-    <Compile Include="Assets\Scripts\MenuScene\QuitButton.cs" />
-    <Compile Include="Assets\Scripts\Options\BackButton.cs" />
-    <Compile Include="Assets\Scripts\Options\CellCountInputField.cs" />
+    <Compile Include="Assets\Scripts\Instructions\Autonom\MenuButton.cs" />
+    <Compile Include="Assets\Scripts\MenuScene\Autonom\InstructionButton.cs" />
+    <Compile Include="Assets\Scripts\MenuScene\Autonom\OptionsButton.cs" />
+    <Compile Include="Assets\Scripts\MenuScene\Autonom\PlayButton.cs" />
+    <Compile Include="Assets\Scripts\MenuScene\Autonom\QuitButton.cs" />
+    <Compile Include="Assets\Scripts\Options\Autonom\BackButton.cs" />
+    <Compile Include="Assets\Scripts\Options\Autonom\CellCountInputField.cs" />
+    <Compile Include="Assets\Scripts\Options\Autonom\PercentageOfMinesInputField.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\Cell.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\ClickModeScript.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\MinesLeft.cs" />

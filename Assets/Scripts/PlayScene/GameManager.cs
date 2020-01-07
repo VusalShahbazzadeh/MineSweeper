@@ -20,9 +20,7 @@ public class GameManager : MonoBehaviour
 			{
 				if (!WinScenePanelReference.activeSelf)
 				{
-					print(gameObject.name);
 					WinScenePanelReference.SetActive(true);
-					print(WinScenePanelReference.activeSelf);
 					WinScenePanelReference.GetComponent<WinScene>().WinCalculations();
 				}
 			}				
