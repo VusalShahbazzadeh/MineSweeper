@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 685, y: 494}
   m_MaxSize: {x: 14006, y: 14044}
   vertical: 0
-  controlID: 124
+  controlID: 22
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 56
+  controlID: 23
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 57
+  controlID: 24
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -480,9 +480,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 68260000
       m_LastClickedID: 0
-      m_ExpandedIDs: 42f8ffff8cfbffff162d00006c2d0000
+      m_ExpandedIDs: b6f9ffffe0f9ffffb6faffffbcfaffffc0faffffccfaffff8cfbffffbc3000004c310000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -544,19 +544,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/PlayScene/Autonom
+    - Assets/Scripts/PlayScene
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/PlayScene/Autonom
+  - Assets/Scripts/PlayScene
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Vusal\Documents\MineSweeper
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b2290000
-    m_LastClickedID: 10674
+    m_SelectedIDs: c0290000
+    m_LastClickedID: 10688
     m_ExpandedIDs: 000000007a290000c0290000702b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0

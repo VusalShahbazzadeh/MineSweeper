@@ -9,15 +9,15 @@ ScriptsOnlyBuild:
     - InstructionButton
     - MenuButton
     - MinesLeft
+    - OpenRandomCellOnStart
     - OptionsButton
     - PauseButton
+    - PercentageOfMinesInputField
     - PlayButton
     - PlayWindow
     - QuitButton
     - StopWatch
     - WinScene
-    UnityEditor.TestRunner.dll:
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -110,7 +110,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10008}
     - Class: 114
-      Script: {instanceID: 10502}
+      Script: {instanceID: 10504}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -159,7 +159,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9388}
     - Class: 114
-      Script: {instanceID: 10584}
+      Script: {instanceID: 10518}
+    - Class: 114
+      Script: {instanceID: 10588}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -226,7 +228,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10188}
     - Class: 114
-      Script: {instanceID: 10542}
+      Script: {instanceID: 10436}
+    - Class: 114
+      Script: {instanceID: 10546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -250,7 +254,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: 7b79dfb89a4cce0214343e92e63fc370
+      Hash: d24f5f0e026b8943b66ab6091f5f731b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WinScene
@@ -500,6 +504,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StopWatch
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements
+    className: CallbackExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Editor
+    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -886,7 +902,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: b1b38a9739c55b37999ba1272fb587e5
+      Hash: a308558cb2ca0e60fe613ddd4df997a7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayWindow
@@ -910,6 +926,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OpenRandomCellOnStart
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -926,6 +948,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OptionsButton
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PercentageOfMinesInputField
   - hash:
       serializedVersion: 2
       Hash: 5372ed2ce39229b1ac910757999a8be2

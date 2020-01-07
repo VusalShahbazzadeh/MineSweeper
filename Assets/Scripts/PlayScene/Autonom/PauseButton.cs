@@ -17,13 +17,10 @@ public class PauseButton : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			if (paused)
-			{
 				SceneManager.LoadScene(0);
-			}
-			else
-			{
+			else if (Time.timeScale != 0f)
 				Pause();
-			}
+
 		}
 	}
 }
