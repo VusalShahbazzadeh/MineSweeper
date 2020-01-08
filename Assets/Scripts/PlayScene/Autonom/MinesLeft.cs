@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using static PlayWindow;
+using static MarkMapScript;
+using static OpenMapScript;
 
 public class MinesLeft : MonoBehaviour
 {
@@ -39,16 +41,17 @@ public class MinesLeft : MonoBehaviour
 		}
 		//count marked
 		markedCount = 0;
-		for (int i = 0; i < Width * Height; i++)
-			if (PlayWindowReference.transform.GetChild(i).GetComponent<Cell>().Marked) markedCount++;
-
+		for (int i = 0; i <  Height; i++)
+			for (int j = 0; j < Width; j++)
+				if (MarkMap[j, i]) markedCount++;
 		//ount mines left
 		minesLeft = mineCount - markedCount;
 
 		//open count
 		openCount = 0;
-		for (int i = 0; i < Width * Height; i++)
-			if (PlayWindowReference.transform.GetChild(i).GetComponent<Cell>().CellIsOpen) openCount++;
+		for (int i = 0; i < Width ; i++)
+			for (int j = 0; j < Width; j++)
+				if (OpenMap[j, i]) openCount++;
 
 		GetComponent<Text>().text = minesLeft.ToString();
 	}

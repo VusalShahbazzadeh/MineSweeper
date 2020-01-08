@@ -13,7 +13,7 @@ public class OpenRandomCellOnStart : MonoBehaviour
 		alreadyCalledModifyRandomCell = !tempCell.mine;
 		if (temp.GetChild(0).GetComponent<Text>().text == "" && !tempCell.mine)
 			tempCell.ModifyCell();
-		else if(TrialCount<PlayWindow.Width*PlayWindow.Height)
+		else if(TrialCount<PlayWindow.Width*PlayWindow.Height*4)
 			ModifyRandomCell();
 	}
 
