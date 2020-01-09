@@ -86,6 +86,7 @@ public class BasicAutoSolve : MonoBehaviour
 			}
 			else
 			{
+				ClickModeReference.SwapClickMode("Open");
 				called = false;
 			}
 		}

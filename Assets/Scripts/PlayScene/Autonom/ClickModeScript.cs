@@ -3,7 +3,8 @@ using UnityEngine.UI;
 
 public class ClickModeScript : MonoBehaviour
 {
-	public static string ClickMode { get; set; }
+	private static string clickMode;
+	public static string ClickMode => clickMode;
 
 	[Header("ClickModeButtons")]
 	public Button OpenButton;
@@ -12,13 +13,13 @@ public class ClickModeScript : MonoBehaviour
 
 	private void Start()
 	{
-		ClickMode = "Open";
+		clickMode = "Open";
 		OpenButton.interactable = false;
 	}
 	
-	public void SwapClickMode(string clickMode)
+	public void SwapClickMode(string _clickMode)
 	{
-		ClickMode = clickMode;
+		clickMode = _clickMode;
 		OpenButton.interactable =
 		MarkButton.interactable =
 		QuestionButton.interactable = true;
