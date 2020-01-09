@@ -8,15 +8,7 @@ public class PercentageOfMinesInputField : MonoBehaviour
 	private int PercentageInput
 	{
 		get => Percentage;
-		set
-		{
-			if (value >= 100)
-				Percentage = 100;
-			 else if (value <= 0)
-				Percentage = 0;
-			else
-				Percentage = value;
-		}
+		set => Percentage = value >= 100 ? 100 : value <= 0 ? 0 : value;
 	}
 
 	private string typedText;
@@ -34,6 +26,8 @@ public class PercentageOfMinesInputField : MonoBehaviour
 
 	public void SetValue()
 	{
+
+		typedText = GetComponent<InputField>().text;
 		PercentageInput = System.Convert.ToInt32(typedText);
 		if (typedText.Length != 0) PlayerPrefs.SetInt("PercentageOfMines", PercentageInput);
 

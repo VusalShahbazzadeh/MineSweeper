@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using static PlayWindow;
 using static MarkMapScript;
 using static OpenMapScript;
+using static CellMapScript;
 
 public class Cell : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class Cell : MonoBehaviour
 
 	private void Update()
 	{
-		NearbyMarked = MarkMapScript.countNearbyMarked(_i,_j);
+		NearbyMarked = countNearbyMarked(_i,_j);
 		NearbyOpen = countNearbyOpen(_i, _j);
 		NearbyCells = BasicAutoSolve.countNearbyCells(_i,_j);
 		if (modified)
@@ -51,15 +52,14 @@ public class Cell : MonoBehaviour
 				modified = true;
 				FindObjectOfType<ClickModeScript>().SwapClickMode("Open");
 				string temp = transform.GetChild(0).GetComponent<Text>().text;
-				if (System.Convert.ToInt32(temp == "" ? "0" : temp) == MarkMapScript.countNearbyMarked(_i,_j))
+				if (System.Convert.ToInt32(temp == "" ? "0" : temp) == countNearbyMarked(_i,_j))
 					for (int i = _i - 1; i < 2 + _i; i++)
 						for (int j = _j - 1; j < 2 + _j; j++)
 						{
 							if (i >= 0 && j >= 0 && i < Height && j < Width && !(i == _i && j == _j))
 							{
-								Cell tempCell = FindObjectOfType<PlayWindow>().transform.GetChild(i * Width + j).GetComponent<Cell>();
 								if (!MarkMap[j, i])
-									tempCell.ModifyCell();
+									cellMap[j,i].ModifyCell();
 								
 							}
 						}
@@ -83,11 +83,11 @@ public class Cell : MonoBehaviour
 						break;
 					case "Mark":
 						CellImage.sprite = (CellImage.sprite == MarkSprite) ? CoveredCellSprite : MarkSprite;
-						MarkMapScript.MarkMap[_j,_i] = Marked = (CellImage.sprite == MarkSprite);
+						MarkMap[_j,_i] = Marked = (CellImage.sprite == MarkSprite);
 						break;
 					case "Question":
 						CellImage.sprite = CellImage.sprite == QuestionSprite ? CoveredCellSprite : QuestionSprite;
-						MarkMapScript.MarkMap[_j, _i] = Marked = CellImage.sprite == QuestionSprite;
+						MarkMap[_j, _i] = Marked = CellImage.sprite == QuestionSprite;
 						break;
 				}
 	}

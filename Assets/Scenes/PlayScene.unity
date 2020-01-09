@@ -2730,10 +2730,10 @@ RectTransform:
   m_Father: {fileID: 301660988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 791.74176}
-  m_SizeDelta: {x: -120.000244, y: 500}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -550}
+  m_SizeDelta: {x: 1799.9998, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1620199808
 MonoBehaviour:
@@ -2900,6 +2900,7 @@ GameObject:
   - component: {fileID: 1760970581}
   - component: {fileID: 1760970580}
   - component: {fileID: 1760970579}
+  - component: {fileID: 1760970582}
   m_Layer: 5
   m_Name: PlayWindow
   m_TagString: Untagged
@@ -3062,6 +3063,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b768d028e59a5a642bcd7b7fd9eb5cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1760970582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760970571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6087fc687bfb66f49aa01fee58820043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1821426272

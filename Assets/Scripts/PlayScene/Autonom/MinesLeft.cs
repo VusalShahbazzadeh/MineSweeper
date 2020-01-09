@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using static PlayWindow;
 using static MarkMapScript;
 using static OpenMapScript;
+using static CellMapScript;
 
 public class MinesLeft : MonoBehaviour
 {
@@ -32,10 +33,7 @@ public class MinesLeft : MonoBehaviour
 			{
 				for (int j = 0; j < Width; j++)
 				{
-					mineMap[j, i] = PlayWindowReference.transform.
-						GetChild(i * Width + j)
-						.GetComponent<Cell>()
-						.mine;
+					mineMap[j, i] = cellMap[j,i].mine;
 				}
 			}
 		}

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static PlayWindow;
 
 public class MarkMapScript : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class MarkMapScript : MonoBehaviour
 		{
 			for (int j = _j - 1; j <= _j + 1; j++)
 			{
-				if (i >= 0 && j >= 0 && i < PlayWindow.Height && j < PlayWindow.Width && !(i==_i && j == _j))
+				if (i >= 0 && j >= 0 && i < Height && j < Width && !(i==_i && j == _j))
 				{
 					if (MarkMap[j, i]) count++;
 				}

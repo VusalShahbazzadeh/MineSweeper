@@ -70,6 +70,9 @@
     <Compile Include="Assets\Scripts\Options\Autonom\BackButton.cs" />
     <Compile Include="Assets\Scripts\Options\Autonom\CellCountInputField.cs" />
     <Compile Include="Assets\Scripts\Options\Autonom\PercentageOfMinesInputField.cs" />
+    <Compile Include="Assets\Scripts\PlayScene\Autonom\BasicAutoSolve.cs" />
+    <Compile Include="Assets\Scripts\PlayScene\Autonom\Cell.cs" />
+    <Compile Include="Assets\Scripts\PlayScene\Autonom\CellMapScript.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\ClickModeScript.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\GameManager.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\MarkMapScript.cs" />
@@ -80,8 +83,6 @@
     <Compile Include="Assets\Scripts\PlayScene\Autonom\PlayWindow.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\StopWatch.cs" />
     <Compile Include="Assets\Scripts\PlayScene\Autonom\WinScene.cs" />
-    <Compile Include="Assets\Scripts\PlayScene\BasicAutoSolve.cs" />
-    <Compile Include="Assets\Scripts\PlayScene\Cell.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Vusal/Documents/MineSweeper/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
